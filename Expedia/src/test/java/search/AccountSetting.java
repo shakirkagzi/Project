@@ -18,12 +18,9 @@ public class AccountSetting extends Base {
         sleepFor(2);
         Login log = new Login(driver); // creating object of main login class
         log.EmailID().sendKeys("johnfrances@yahoo.com");
-        // typeByXpath("./*//*[@id='signin-loginid']", "johnfrances@yahoo.com");
         sleepFor(1);
         log.password().sendKeys("john123");
-        //typeByXpath("./*//*[@id='signin-password']", "john123");
         log.Submit().click();
-        // clickByXpath("./*//*[@id='submitButton']");
         sleepFor(7);
         clickByXpath("./*//*[@id='header-account-menu']");
         clickByXpath(".//*[@id='header-account-myaccount']");
